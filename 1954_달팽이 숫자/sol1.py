@@ -5,7 +5,8 @@ T = int(input())
 
 for tc in range(1, T+1):
     N = int(input())
-    arr = [[0] * N] * N
+
+    arr = [list(0 for i in range(N)) for j in range(N)]
     arr[0] = [i for i in range(1, N+1)]
 
     count = N-1
@@ -28,7 +29,11 @@ for tc in range(1, T+1):
         sign += 1
         count -= 1
 
-    print(arr)
+    print('#{}'.format(tc))
+    for ar in arr:
+        for element in ar:
+            print(element, end=' ')
+        print()
 
 
 
