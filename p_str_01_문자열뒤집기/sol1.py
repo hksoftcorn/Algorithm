@@ -17,11 +17,14 @@ while idx >= 0:
     idx -= 1
 print(r_word)
 
+
 # 재귀
 def solv(word):
+    idx = len(word) - 1
     # base(escape) code
-    if len(word) <= 0:
-        return word
+    if idx == 0:
+        return word[idx]
+    return word[idx] + solv(word[:idx])
 
 
 
