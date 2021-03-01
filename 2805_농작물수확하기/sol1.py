@@ -24,6 +24,6 @@ for tc in range(1, T+1):
     N = int(input())
     if N == 1:
         print('#{} {}'.format(tc, input()))
-    arr = [list(input()) for _ in range(N)]
-
-    print('#{} {}'.format(tc, solution(N, arr)))
+    else:
+        arr = [list(input()) for _ in range(N)]
+        print('#{} {}'.format(tc, solution(N, arr)))
