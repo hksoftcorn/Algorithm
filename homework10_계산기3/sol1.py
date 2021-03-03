@@ -2,7 +2,7 @@ import sys
 sys.stdin = open('input.txt', 'r')
 
 
-operator = ('*', '+', '(', ')')
+operator = ('*', '/', '+', '-', '(', ')')
 
 
 def is_number(x):
@@ -17,35 +17,31 @@ def make_postfix(input_data):
     result = []
 
     def pref(x):
-        if x == '*':
+        if x == '*' or x == '/':
+            return 3
+        elif x == '+' or x == '-':
             return 2
-        elif x == '+':
-            return 1
         elif x == '(':
-            return 0
+            return 1
 
     for data in input_data:
         # 피연산자(숫자)는 result에 넣어줍니다.
         if is_number(data):
             result.append(data)
         # 연산자라면 stack에 넣어서 우선순위를 판별합니다.
-        elif data in operator:
-            if data == ')':
-                while len(stack) >  and stack[-1] != '(':
-                    op = stack.pop()
-                    result.append(op)
-                stack.pop()
-            else:
-                p = pref(data)
-                while len(stack):
-                    top = stack[-1]
-                    # 우선순위가 높은 연산자는 stack에 쌓일 자격이 있습니다
-                    if pref(top) < p:
-                        break
-                    # 하지만 낮거나 같다면 pop되어야 하죠
-                    else:
-                        result.append(stack.pop())
-                stack.append(data)
+        elif data == '(':
+            stack.append(data)
+        elif data == ')':
+            while len(stack) > 0 or stack[-1] != '(':
+                result.append(stack.pop())
+            stack.pop()
+        else:
+            while len(stack) > 0 or pref(stack[-1]) >= pref(data):
+                result.append(stack.pop())
+            result.append(data)
+
+    while stack:
+        result.append(stack.pop())
 
     return ''.join(result)
 
@@ -56,6 +52,9 @@ def solution(input_data):
     for p in postfix_data:
         if is_number(p):
             stack.append(int(p))
+        elif len(stack) == 1:
+            stack.append()
+
         else:
             post = stack.pop()
             pre = stack.pop()
@@ -63,6 +62,7 @@ def solution(input_data):
                 stack.append(pre + post)
             else:
                 stack.append(pre * post)
+
 
     return sum(stack)
 
