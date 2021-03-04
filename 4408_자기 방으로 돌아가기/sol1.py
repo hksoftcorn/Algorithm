@@ -12,6 +12,12 @@ for tc in range(1, T+1):
 
     for _ in range(N-1):
         current_room, my_room = map(int, input().split())
+        def less_room(l, r):
+            if l > r:
+                return r, l
+            else:
+                return l, r
+        current_room, my_room = less_room(current_room, my_room)
         for i in range(current_room, my_room+1):
             if i in steps:
                 result += 1
