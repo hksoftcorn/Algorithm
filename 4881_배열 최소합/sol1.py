@@ -3,6 +3,8 @@ sys.stdin = open('sample_input.txt', 'r')
 
 
 def solution():
+    
+
 
 
 
