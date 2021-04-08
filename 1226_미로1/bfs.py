@@ -2,8 +2,8 @@ import sys
 sys.stdin = open('input.txt', 'r')
 
 # 상하좌우
-dr = [-1,1,0,0]
-dc = [0,0,-1,1]
+dr = [-1, 1, 0, 0]
+dc = [0, 0, -1, 1]
 
 
 # 리스트 큐
