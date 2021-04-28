@@ -12,8 +12,3 @@ fx, fy = map(int, input().split()) # festival
 result = 'sad'
 while abs(hx - fx) + abs(hy - fy) > 1000:
     for convenience_store in convenience_stores:
-        
-
-
-
-
