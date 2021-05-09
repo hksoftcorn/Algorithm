@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e8f93f40-6e62-45bc-bc5c-1daebe2c3df3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/02_스택큐/주식가격.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e8f93f40-6e62-45bc-bc5c-1daebe2c3df3" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,10 +12,10 @@
     <session id="87707610">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -78,7 +75,7 @@
         <entry file="file://$PROJECT_DIR$/02_스택큐/주식가격.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -135,43 +132,10 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="프로그래머스" type="b2602c69:ProjectViewProjectNode" />
-              <item name="프로그래머스" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="프로그래머스" type="b2602c69:ProjectViewProjectNode" />
-              <item name="프로그래머스" type="462c0819:PsiDirectoryNode" />
-              <item name="01_해시" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="프로그래머스" type="b2602c69:ProjectViewProjectNode" />
-              <item name="프로그래머스" type="462c0819:PsiDirectoryNode" />
-              <item name="02_스택큐" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="프로그래머스" type="b2602c69:ProjectViewProjectNode" />
-              <item name="프로그래머스" type="462c0819:PsiDirectoryNode" />
-              <item name="08_깊이너비 우선 탐색" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="프로그래머스" type="b2602c69:ProjectViewProjectNode" />
-              <item name="프로그래머스" type="462c0819:PsiDirectoryNode" />
-              <item name="10_그래프" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../[210508] kakao" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -185,7 +149,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.주식가격">
+  <component name="RunManager" selected="Python.전화번호 목록">
     <configuration name="전화번호 목록" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="프로그래머스" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -252,11 +216,9 @@
     <list>
       <item itemvalue="Python.전화번호 목록" />
       <item itemvalue="Python.가장먼노드" />
-      <item itemvalue="Python.주식가격" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.주식가격" />
         <item itemvalue="Python.가장먼노드" />
         <item itemvalue="Python.전화번호 목록" />
       </list>
@@ -315,6 +277,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/10_그래프/가장먼노드.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/08_깊이너비 우선 탐색/네트워크.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -329,17 +298,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/10_그래프/가장먼노드.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/02_스택큐/주식가격.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
         </state>
       </provider>
     </entry>
