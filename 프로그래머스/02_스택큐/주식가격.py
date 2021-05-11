@@ -5,11 +5,32 @@
 """
 
 def solution(prices):
-    answer = [0]
-    price = prices.pop()    # prices의 길이는 2이상 100000 이하입니다.
+    # prices의 길이는 2이상 100000 이하입니다.
+    N = len(prices)
+    answer = [0] * N
+    stack = []
 
-    while prices:
-        prev_price = prices.pop()
+    for i in range(N):
+        price = prices[i]
 
+        # stack이 비어있다면 stack에 넣기
+        # (i, price)
+        if not stack:
+            stack.append((i, price))
+
+        else:
+            # stack top과 비교하여, price보다 크다면 꺼내기
+            while stack and price < stack[-1][1]:
+                idx, _ = stack.pop()
+                answer[idx] += (i - idx)
+            stack += [(i, price)]
+
+    for s in stack:
+        idx, _ = s
+        answer[idx] = (N - 1 - idx)
 
     return answer
+
+
+prices = [1, 2, 3, 2, 3]
+print(solution(prices))
