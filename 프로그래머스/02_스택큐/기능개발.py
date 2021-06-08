@@ -1,6 +1,4 @@
 import math
-
-
 def solution(progresses, speeds):
     completed_days = []
     N = len(progresses)
